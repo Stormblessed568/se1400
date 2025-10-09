@@ -17,7 +17,7 @@ header {
 #logo {
     width: 100px;
     height: 50px;
-    background-image: url("/images/green_logo_on_orange.png");
+    background-image: url("images/green_logo_on_orange.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
@@ -86,7 +86,7 @@ main h3 {
 }
 
 #PocketWatch {
-    background-image: url(images/pocket_watch.jpg);
+    background-image: url("images/pocket_watch.jpg");
     height: 299px;
     width: 462px;
     float: none;
@@ -94,7 +94,7 @@ main h3 {
 }
 
 #Family {
-    background-image: url(images/family.jpg);
+    background-image: url("images/family.jpg");
     height: 299px;
     width: 462px;
     float: none;
@@ -102,7 +102,7 @@ main h3 {
 }
 
 #Calendar {
-    background-image: url(images/calendar.jpg);
+    background-image: url("images/calendar.jpg");
     height: 299px;
     width: 462px;
     float: none;
@@ -128,7 +128,7 @@ footer {
 }
 
 #BlackLogo {
-    background-image: url(images/black_logo.png);
+    background-image: url("images/black_logo.png");
     width: 100px;
     height: 50px;
     background-position: left center;
