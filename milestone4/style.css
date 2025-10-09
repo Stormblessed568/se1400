@@ -19,7 +19,7 @@ header {
     height: 50px;
     background-image: url("/images/green_logo_on_orange.png");
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: contain;
     background-position: left center;
 }
 
