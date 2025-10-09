@@ -8,34 +8,52 @@
 
 header {
     grid-area: 1/1/2/9;
-    background: rgba(0, 0, 255, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+    position: sticky;
+    top: 0px;
+    right: 0px;
+}
+
+#logo {
+    width: 100px;             
+    height: 50px;
+    background-image: url("/images/green_logo_on_orange.png");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    margin: 1px;
+    float: left;
 }
 
 nav {
     grid-area: 1/2/2/8;
-    background: rgba(255, 0, 255, 0.3);
     position: sticky;
     top: 0px;
     right: 0px;
-    text-align: right;
-
 }
 
 nav ul {
     list-style-type: none;
+    text-align: right;
+
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 60px;
     color: #1F5B31;
     font-weight: bold;
+}
+
+nav ul li div {
+    color: #CC5500;
 }
 
 
 #homeHero {
     grid-area: 1/1/4/9;
-    background: rgba(255, 0, 0, 0.3);
+    background-image: url("images/planner_&_laptop.jpg");
+    background-position: 50% 60%;
+    background-size: cover;
 }
 
 main {
