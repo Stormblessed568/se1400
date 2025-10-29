@@ -1,0 +1,316 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    grid-template-rows: 70px 400px 70px minmax(990px, 1fr) 70px;
+    background: #ffffff;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+header {
+    grid-area: 1/2/2/8;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    background-image: url("images/green_logo_on_orange.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: 1/2/2/8;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+}
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    font-weight: bold;
+    color: #1F5B31;
+}
+
+nav ul li div {
+    color: #CC5500;
+}
+
+#greybar {
+    background-color: rgba(255, 255, 255, 0.5);
+    grid-area: 1/1/2/9;
+    position: sticky;
+    top: 0px;
+}
+
+#homeHero {
+    grid-area: 1/1/4/9;
+    background-image: url("images/planner_&_laptop.jpg");
+    background-position: center 75%;
+    background-size: cover;
+}
+
+main {
+    grid-area: 3/2/5/8;
+    background: #dddddd;
+    padding-bottom: 2rem;
+}
+
+main h3 {
+    color: #CC5500;
+}
+
+.halves {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.half1 {
+    grid-column: 1/2;
+    overflow: auto;
+}
+
+.half2 {
+    grid-column: 2/3;
+    overflow: auto;
+}
+
+#PocketWatch {
+    background-image: url("images/pocket_watch.jpg");
+    height: 299px;
+    width: 462px;
+    float: none;
+    background-size: cover;
+}
+
+#Family {
+    background-image: url("images/family.jpg");
+    height: 299px;
+    width: 462px;
+    float: none;
+    background-size: cover;
+}
+
+#Calendar {
+    background-image: url("images/calendar.jpg");
+    height: 299px;
+    width: 462px;
+    float: none;
+    background-size: cover;
+}
+
+footer {
+    grid-area: 5/1/6/9;
+    background: #1F5B31;
+    font-size: small;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) repeat(6, minmax(0, 175px)) minmax(0, 1fr);
+    align-items: center;
+}
+
+.footer-content {
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    min-width: 0;
+}
+
+#BlackLogo {
+    background-image: url("images/black_logo.png");
+    width: 100px;
+    height: 50px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#greenbar {
+    background-color: #1F5B31;
+    grid-area: 5/1/6/9;
+}
+
+@media only screen and (max-width: 992px) {
+    #wrapper {
+        grid-template-columns: minmax(0px, 1fr) 768px minmax(0px, 1fr);
+        grid-template-rows: 70px 300px 70px minmax(740px, 1fr) 70px;
+    }
+
+    header {
+        grid-column: 1/4;
+        position: static;
+        z-index: 10;
+    }
+
+    #greybar {
+        position: static;
+        z-index: 10;
+    }
+
+    nav {
+        grid-area: 1/2/2/3;
+        position: static;
+        z-index: 11;
+    }
+
+    nav ul {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    #homeHero {
+        height: auto
+    }
+
+    main {
+        grid-column: 2/3;
+    }
+
+    .halves {
+        display: flex;
+    }
+
+    .half1 {
+        flex-wrap: wrap;
+        width: 50%;
+        height: auto;
+    }
+
+    .half2 {
+        flex-wrap: wrap;
+        width: 50%;
+        height: auto;
+    }
+
+    footer {
+        grid-column: 2/3;
+    }
+
+    .footer-content {
+        gap: 1rem;
+    }
+
+    footer ul {
+        gap: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr auto;
+    }
+
+    header {
+        grid-area: 1/1/2/2;
+        justify-content: center;
+    }
+
+    #greybar {
+        grid-area: 1/1/3/2;
+    }
+
+    nav {
+        grid-area: 2/1/3/2;
+        justify-self: center;
+    }
+
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        padding: .5rem 0;
+    }
+
+    main {
+        grid-area: 3/1/5/2;
+    }
+
+    .halves {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .half1,
+    .half2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .halves:nth-of-type(2) .half1 {
+        order: 2;
+    }
+
+
+    #PocketWatch,
+    #Family,
+    #Calendar {
+        width: 100%;
+        background-position: center;
+    }
+
+    h3,
+    p {
+        text-align: center;
+    }
+
+    footer {
+        grid-area: 5/1/6/2;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: .75rem;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+}
