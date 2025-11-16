@@ -115,6 +115,13 @@ main {
     color: #777777;
 }
 
+/* generic content block used on multiple pages */
+.page-section {
+    padding: 1rem 1.5rem 2rem;
+    margin: 1rem auto 0;
+    max-width: 70rem;
+}
+
 main h3 {
     color: #CC5500;
 }
@@ -231,6 +238,11 @@ footer li {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
     padding: 1.5rem;
+}
+
+/* standalone cards directly inside main (To-Do list, login card, etc.) */
+main > .card {
+    margin: 0 1.5rem 2rem;
 }
 
 /* ========= MY PLANNER ========= */
@@ -494,6 +506,7 @@ footer li {
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
+    margin-bottom: 2rem;
 }
 
 .login-subtitle {
