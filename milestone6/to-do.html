@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To-Do - My Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="todo-page">
+    <div id="wrapper">
+        <div id="greybar"></div>
+        <div id="greenbar"></div>
+
+        <header>
+            <div id="logo"></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myplanner.html">My Planner</a></li>
+                <li><a href="familyplanner.html">Family Planner</a></li>
+                <li class="active"><a href="to-do.html">To-Do</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="homeHero"></div>
+
+        <main>
+            <div class="page-header">
+                <h1>To-Do</h1>
+                <p>
+                    Capture everything you need to get done, then sort it by priority
+                    so you always know what to work on next.
+                </p>
+            </div>
+
+            <h2 class="section-title">Filters</h2>
+
+            <div class="todo-filters">
+                <button class="active">All</button>
+                <button>Today</button>
+                <button>This Week</button>
+                <button>School</button>
+                <button>Home</button>
+                <button>Personal</button>
+            </div>
+
+            <h2 class="section-title">My Tasks</h2>
+
+            <section class="card">
+                <ul class="todo-list">
+                    <li class="todo-item">
+                        <input type="checkbox" id="t1">
+                        <label for="t1">
+                            Review CS lecture notes
+                            <br>
+                            <small>Category: School ~ Due: Today</small>
+                        </label>
+                    </li>
+
+                    <li class="todo-item">
+                        <input type="checkbox" id="t2">
+                        <label for="t2">
+                            Work on group project outline
+                            <br>
+                            <small>Category: School ~ Due: Wed</small>
+                        </label>
+                    </li>
+
+                    <li class="todo-item">
+                        <input type="checkbox" id="t3">
+                        <label for="t3">
+                            30-minute run or workout
+                            <br>
+                            <small>Category: Personal ~ Due: Today</small>
+                        </label>
+                    </li>
+
+                    <li class="todo-item">
+                        <input type="checkbox" id="t4">
+                            <label for="t4">
+                                Grocery shopping list
+                                <br>
+                                <small>Category: Home ~ Due: This Week</small>
+                            </label>
+                    </li>
+
+                    <li class="todo-item">
+                        <input type="checkbox" id="t5">
+                        <label for="t5">
+                            Tidy desk &amp; backpack
+                            <br>
+                            <small>Category: Home ~ Due: Tonight</small>
+                        </label>
+                    </li>
+
+                    <li class="todo-item">
+                        <input type="checkbox" id="t6">
+                        <label for="t6">
+                            Plan weekend family activity
+                            <br>
+                            <small>Category: Family ~ Due: Friday</small>
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div id="BlackLogo"></div>
+                <ul>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Terms &amp; Privacy</li>
+                    <li>My Planner</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

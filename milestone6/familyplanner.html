@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Family Planner - My Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="family-page">
+    <div id="wrapper">
+        <div id="greybar"></div>
+        <div id="greenbar"></div>
+
+        <header>
+            <div id="logo"></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="myplanner.html">My Planner</a></li>
+                <li class="active"><a href="familyplanner.html">Family Planner</a></li>
+                <li><a href="to-do.html">To-Do</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="homeHero"></div>
+
+        <main>
+            <div class="page-header">
+                <h1>Family Planner</h1>
+                <p>
+                    Coordinate everyone's schedules, routines, and responsibilities so your
+                    whole family stays in sync.
+                </p>
+            </div>
+
+            <h2 class="section-title">Family Overview</h2>
+
+            <section class="card-row">
+                <article class="card">
+                    <h3>You</h3>
+                    <p>Main schedule owner with school, work, and training blocks.</p>
+                    <div class="pill-row">
+                        <span class="pill">Classes</span>
+                        <span class="pill">Work</span>
+                        <span class="pill">Training</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Partner</h3>
+                    <p>Track their key commitments so you can plan together.</p>
+                    <div class="pill-row">
+                        <span class="pill pill-outline">Work</span>
+                        <span class="pill pill-outline">Errands</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h3>Kids</h3>
+                    <p>School, activities, and routines in one simple view.</p>
+                    <div class="pill-row">
+                        <span class="pill">School</span>
+                        <span class="pill">Activities</span>
+                        <span class="pill">Bedtime</span>
+                    </div>
+                </article>
+            </section>
+
+            <!-- === THIS WEEK AS THREE CARDS IN ONE ROW === -->
+            <h2 class="section-title">Family Dashboard</h2>
+
+            <section class="card-row">
+                <!-- Shared Calendar card -->
+                <article class="card">
+                    <h3>Shared Calendar</h3>
+                    <p>See everything happening this week for the whole family.</p>
+                    <ul>
+                        <li>Mon – Parent-teacher meeting</li>
+                        <li>Tue – Soccer practice</li>
+                        <li>Thu – Date night</li>
+                        <li>Sat – Family outing</li>
+                    </ul>
+                </article>
+
+                <!-- Family To-Dos card -->
+                <article class="card">
+                    <h3>Family To-Dos</h3>
+                    <p>Assign responsibilities so the workload feels balanced.</p>
+                    <ul>
+                        <li>Grocery shopping – You</li>
+                        <li>Laundry – Partner</li>
+                        <li>Clean playroom – Kids</li>
+                    </ul>
+                </article>
+
+                <!-- Calendar card (reusing the mini calendar) -->
+                <article class="card">
+                    <h3>Family Calendar</h3>
+                    <div class="mini-calendar">
+                        <div class="calendar-header">
+                            <span class="calendar-month">November</span>
+                            <span class="calendar-year">2025</span>
+                        </div>
+
+                        <div class="calendar-weekdays">
+                            <span>Sun</span>
+                            <span>Mon</span>
+                            <span>Tue</span>
+                            <span>Wed</span>
+                            <span>Thu</span>
+                            <span>Fri</span>
+                            <span>Sat</span>
+                        </div>
+
+                        <div class="calendar-grid">
+                            <!-- Leading empty cells then days (example layout) -->
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="day has-event">1</span>
+                            <span class="day">2</span>
+                            <span class="day has-event">3</span>
+                            <span class="day">4</span>
+                            <span class="day">5</span>
+                            <span class="day">6</span>
+                            <span class="day">7</span>
+                            <span class="day">8</span>
+                            <span class="day">9</span>
+                            <span class="day">10</span>
+                            <span class="day">11</span>
+                            <span class="day">12</span>
+                            <span class="day has-event">13</span>
+                            <span class="day">14</span>
+                            <span class="day">15</span>
+                            <span class="day">16</span>
+                            <span class="day">17</span>
+                            <span class="day">18</span>
+                            <span class="day has-event">19</span>
+                            <span class="day">20</span>
+                            <span class="day">21</span>
+                            <span class="day">22</span>
+                            <span class="day">23</span>
+                            <span class="day">24</span>
+                            <span class="day">25</span>
+                            <span class="day">26</span>
+                            <span class="day">27</span>
+                            <span class="day has-event">28</span>
+                            <span class="day">29</span>
+                            <span class="day">30</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div id="BlackLogo"></div>
+                <ul>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Terms &amp; Privacy</li>
+                    <li>My Planner</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

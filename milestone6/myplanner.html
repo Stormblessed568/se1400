@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Planner - My Planner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="my-page">
+    <div id="wrapper">
+        <div id="greybar"></div>
+        <div id="greenbar"></div>
+
+        <header>
+            <div id="logo"></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="myplanner.html">My Planner</a></li>
+                <li><a href="familyplanner.html">Family Planner</a></li>
+                <li><a href="to-do.html">To-Do</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <!-- hero kept for consistent layout & media queries -->
+        <div id="homeHero"></div>
+
+        <main>
+            <!-- Page heading area -->
+            <div class="page-header">
+                <h1>My Planner</h1>
+                <p>
+                    See your day, week, and long-term goals in one place so you can
+                    stay on top of what matters most.
+                </p>
+            </div>
+
+            <!-- Overview section -->
+            <h2 class="section-title">Overview</h2>
+
+            <!-- Three “summary cards” row -->
+            <section class="card-row">
+                <article class="card">
+                    <h2>Today</h2>
+                    <p>Quick snapshot of the most important tasks for today.</p>
+                    <ul>
+                        <li>Morning workout</li>
+                        <li>Review class notes</li>
+                        <li>Work on project draft</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>This Week</h2>
+                    <p>Keep track of deadlines and recurring commitments.</p>
+                    <ul>
+                        <li>Mon - CS quiz</li>
+                        <li>Wed - Group meeting</li>
+                        <li>Fri - Long run</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h2>Goals</h2>
+                    <p>Use this to remember your big-picture goals.</p>
+                    <ul>
+                        <li>Finish half-marathon plan</li>
+                        <li>Stay ahead on assignments</li>
+                        <li>Schedule family weekend</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- How it all fits together -->
+            <h2 class="section-title">How It All Fits Together</h2>
+
+            <section class="card-row">
+                <!-- Day view / schedule -->
+                <article class="card">
+                    <h2>Day View</h2>
+                    <p>Plan out today hour by hour so you always know what's next.</p>
+                    <ul class="day-schedule">
+                        <li>
+                            <span class="day-time">7:00</span>
+                            <span>Morning routine - breakfast, get ready, quick tidy.</span>
+                        </li>
+                        <li>
+                            <span class="day-time">9:00</span>
+                            <span>Classes / study - focus blocks for school work.</span>
+                        </li>
+                        <li>
+                            <span class="day-time">13:00</span>
+                            <span>Project work - assignments, group work, planning.</span>
+                        </li>
+                        <li>
+                            <span class="day-time">16:00</span>
+                            <span>Errands / chores - groceries, laundry, cleaning.</span>
+                        </li>
+                        <li>
+                            <span class="day-time">18:00</span>
+                            <span>Family / downtime - dinner, playtime, relax.</span>
+                        </li>
+                        <li>
+                            <span class="day-time">21:00</span>
+                            <span>Wind down - prep for tomorrow, reading, bed.</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Week view -->
+                <article class="card">
+                    <h2>Week View</h2>
+                    <p>See the big picture for the week so you can balance work, school, and life.</p>
+                    <div class="week-strip">
+                        <div class="week-day is-busy">
+                            <span class="label">Mon</span>
+                            <span class="summary">CS quiz</span>
+                        </div>
+                        <div class="week-day">
+                            <span class="label">Tue</span>
+                            <span class="summary">Study &amp; chores</span>
+                        </div>
+                        <div class="week-day is-busy">
+                            <span class="label">Wed</span>
+                            <span class="summary">Group meeting</span>
+                        </div>
+                        <div class="week-day">
+                            <span class="label">Thu</span>
+                            <span class="summary">Light day</span>
+                        </div>
+                        <div class="week-day is-busy">
+                            <span class="label">Fri</span>
+                            <span class="summary">Long run</span>
+                        </div>
+                        <div class="week-day">
+                            <span class="label">Sat</span>
+                            <span class="summary">Family time</span>
+                        </div>
+                        <div class="week-day">
+                            <span class="label">Sun</span>
+                            <span class="summary">Reset &amp; plan</span>
+                        </div>
+                    </div>
+                    <p class="week-legend">
+                        <span class="week-legend-box"></span>
+                        Busy day
+                    </p>
+
+                </article>
+
+                <!-- Goals board -->
+                <article class="card">
+                    <h2>Goals Board</h2>
+                    <p>Connect your daily and weekly plans to the goals that matter most.</p>
+                    <ul class="goal-list">
+                        <li>
+                            <span class="goal-tag">School</span><br>
+                            <strong>Stay ahead on assignments</strong><br>
+                            Review notes 20-30 minutes each day instead of cramming.
+                        </li>
+                        <li>
+                            <span class="goal-tag">Fitness</span><br>
+                            <strong>Half-marathon training</strong><br>
+                            Long run on Friday, easy runs and strength earlier in the week.
+                        </li>
+                        <li>
+                            <span class="goal-tag">Family</span><br>
+                            <strong>Be present at home</strong><br>
+                            Protect evenings and one weekend block for family time.
+                        </li>
+                        <li>
+                            <span class="goal-tag">Personal</span><br>
+                            <strong>Lower stress</strong><br>
+                            Build a simple night routine and leave buffer time between tasks.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div id="BlackLogo"></div>
+                <ul>
+                    <li>About</li>
+                    <li>Contact Us</li>
+                    <li>Terms &amp; Privacy</li>
+                    <li>My Planner</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
